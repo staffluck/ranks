@@ -61,7 +61,7 @@ ROOT_URLCONF = 'ranks.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,3 +130,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STRIPE_KEY = env("STRIPE_API_KEY")
+STRIPE_PUBLIC_KEY = env("STRIPE_PUBLIC_KEY")
