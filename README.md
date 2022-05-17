@@ -7,6 +7,7 @@ ranks
 ```sh
 https://github.com/staffluck/ranks.git
 pip(venv) install -r requirements.txt
+Установки переменных окружения по шаблону .env.template в корне проекта в файле .env
 ```
 
 ## Запуск
