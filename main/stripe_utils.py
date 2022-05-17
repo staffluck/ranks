@@ -21,7 +21,7 @@ def get_stripe_session_id(items: QuerySet[Item], cancel_url: str, success_url: s
                         "name": item.name,
                         "description": item.description
                     },
-                    "unit_amount_decimal": item.price
+                    "unit_amount": item.price * 100
                 },
             }
         )
